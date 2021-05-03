@@ -1,10 +1,10 @@
-# gem_template
+# within_time
 
-[![Gem Version](https://img.shields.io/gem/v/gem_template.svg?style=flat)](http://rubygems.org/gems/gem_template)
-[![Build Status](https://github.com/khiav223577/gem_template/workflows/build/badge.svg)](https://github.com/khiav223577/gem_template/actions)
-[![RubyGems](http://img.shields.io/gem/dt/gem_template.svg?style=flat)](http://rubygems.org/gems/gem_template)
-[![Code Climate](https://codeclimate.com/github/khiav223577/gem_template/badges/gpa.svg)](https://codeclimate.com/github/khiav223577/gem_template)
-[![Test Coverage](https://codeclimate.com/github/khiav223577/gem_template/badges/coverage.svg)](https://codeclimate.com/github/khiav223577/gem_template/coverage)
+[![Gem Version](https://img.shields.io/gem/v/within_time.svg?style=flat)](http://rubygems.org/gems/within_time)
+[![Build Status](https://github.com/khiav223577/within_time/workflows/build/badge.svg)](https://github.com/khiav223577/within_time/actions)
+[![RubyGems](http://img.shields.io/gem/dt/within_time.svg?style=flat)](http://rubygems.org/gems/within_time)
+[![Code Climate](https://codeclimate.com/github/khiav223577/within_time/badges/gpa.svg)](https://codeclimate.com/github/khiav223577/within_time)
+[![Test Coverage](https://codeclimate.com/github/khiav223577/within_time/badges/coverage.svg)](https://codeclimate.com/github/khiav223577/within_time/coverage)
 
 ## Supports
 - Ruby 2.2 ~ 2.7
@@ -13,7 +13,7 @@
 ## Installation
 
 ```ruby
-gem 'gem_template'
+gem 'within_time'
 ```
 
 And then execute:
@@ -22,7 +22,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install gem_template
+    $ gem install within_time
 
 ## Usage
 
@@ -35,7 +35,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/khiav223577/gem_template. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/khiav223577/within_time. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License
