@@ -5,6 +5,8 @@ ActiveRecord::Schema.define do
     t.string :name
     t.string :email
     t.string :gender
+
+    t.timestamps null: false
   end
 end
 
