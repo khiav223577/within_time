@@ -9,10 +9,10 @@ module WithinTime
     # Make sure the model satisfies the following conditions:
     #   1. [column] is monotonic increasing (when order by id ASC).
     def bsearch_time_range(column, time_range)
-      first_id = @relation.order(id: :asc).pick(:id)
+      first_id = pick(@relation.order(id: :asc), :id)
       return none if !first_id
 
-      last_id = @relation.order(id: :desc).pick(:id)
+      last_id = pick(@relation.order(id: :desc), :id)
 
       min_id_in_time_range = bsearch_first_id_on_datetime(first_id..last_id, time_range.min, column)
       return none if min_id_in_time_range == nil
@@ -24,16 +24,22 @@ module WithinTime
 
     def bsearch_first_id_on_datetime(id_range, datetime, column)
       BSearchWithLocalJumping::RangeWrapper.new(id_range).search do |id|
-        value, actual_id = @relation.where('id <= ?', id).order(id: :desc).pick(column, :id)
+        value, actual_id = pick(@relation.where('id <= ?', id).order(id: :desc), column, :id)
         next [value >= datetime, actual_id]
       end
     end
 
     def bsearch_last_id_on_datetime(id_range, datetime, column)
       BSearchWithLocalJumping::RangeWrapper.new(id_range).search do |id|
-        value, actual_id = @relation.where('id >= ?', id).order(id: :asc).pick(column, :id)
+        value, actual_id = pick(@relation.where('id >= ?', id).order(id: :asc), column, :id)
         next [value > datetime, actual_id]
       end
+    end
+
+    private
+
+    def pick(relation, *args)
+      ActiveRecord::Relation.method_defined?(:pick) ? relation.pick(*args) : relation.limit(1).pluck(*args).first
     end
   end
 end
