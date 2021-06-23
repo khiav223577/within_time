@@ -1,7 +1,7 @@
 # within_time
 
 [![Gem Version](https://img.shields.io/gem/v/within_time.svg?style=flat)](http://rubygems.org/gems/within_time)
-[![Build Status](https://github.com/khiav223577/within_time/workflows/build/badge.svg)](https://github.com/khiav223577/within_time/actions)
+[![Build Status](https://github.com/khiav223577/within_time/workflows/Ruby/badge.svg)](https://github.com/khiav223577/within_time/actions)
 [![RubyGems](http://img.shields.io/gem/dt/within_time.svg?style=flat)](http://rubygems.org/gems/within_time)
 [![Code Climate](https://codeclimate.com/github/khiav223577/within_time/badges/gpa.svg)](https://codeclimate.com/github/khiav223577/within_time)
 [![Test Coverage](https://codeclimate.com/github/khiav223577/within_time/badges/coverage.svg)](https://codeclimate.com/github/khiav223577/within_time/coverage)
